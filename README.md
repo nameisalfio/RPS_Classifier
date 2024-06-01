@@ -43,6 +43,7 @@ Several visualizations are available for performance evaluation:
 
 The directory structure of the project is as follows:
 
+```bash
 RPS_Classifier
 ├── data
 │ ├── test
@@ -61,7 +62,7 @@ RPS_Classifier
 │ └── rps_experiment
 ├── models
 └── plots
-
+```
 
 ## Requirements
 
