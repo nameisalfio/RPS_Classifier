@@ -39,6 +39,23 @@ Several visualizations are available for performance evaluation:
 - **Distribution of Samples in Testing Data**: ![Distribution of Samples in Testing Data](plots/Distribution_Samples_in_Testing_Data.png)
 - **Comparison of RPS Classifier Performance**: ![Comparison of RPS Classifier Performance](plots/Comparison_RPS_ResNet_Test_Performance.png)
 
+
+## Cloning the Repository
+
+You can clone this repository using the following command:
+
+```bash
+git clone git@github.com:nameisalfio/RPS_Classifier.git
+```
+
+## Requirements
+
+To run the RPS Classifier, you need to install the following Python libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Directory Structure
 
 The directory structure of the project is as follows:
@@ -64,18 +81,8 @@ RPS_Classifier
 └── plots
 ```
 
-## Requirements
-
-To run the RPS Classifier, you need to install the following Python libraries:
+## Usage 
 
 ```bash
-pip install -r requirements.txt
-```
-
-## Cloning the Repository
-
-You can clone this repository using the following command:
-
-```bash
-git clone git@github.com:nameisalfio/RPS_Classifier.git
+python3 gui.py
 ```

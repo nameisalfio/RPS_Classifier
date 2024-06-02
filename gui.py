@@ -35,24 +35,24 @@ class RPSClassifierApp:
         self.label_load = tk.Label(self.button_frame, text="Load Image", font=("Arial", 15), bg='#708090')
         self.label_load.grid(row=0, column=0, pady=10)
 
-        load_icon_pil = Image.open("icons/load.png")
+        load_icon_pil = Image.open("icons/load_2.png")
         load_icon_pil = load_icon_pil.resize((50, 50))  
         load_icon = ImageTk.PhotoImage(load_icon_pil)
 
         self.btn_load_image = tk.Button(self.button_frame, image=load_icon, command=self.load_image) 
         self.btn_load_image.image = load_icon  
-        self.btn_load_image.grid(row=0, column=1, padx=10)
+        self.btn_load_image.grid(row=0, column=1, padx=20, pady=10)
 
         self.label_classify = tk.Label(self.button_frame, text="Classify Image", font=("Arial", 15), bg='#708090')
         self.label_classify.grid(row=1, column=0, pady=10)
 
-        classify_icon_pil = Image.open("icons/classify.png")
+        classify_icon_pil = Image.open("icons/classify_cnn.png")
         classify_icon_pil = classify_icon_pil.resize((50, 50))  
         classify_icon = ImageTk.PhotoImage(classify_icon_pil)
 
         self.btn_classify = tk.Button(self.button_frame, image=classify_icon, command=self.classify_image)  
         self.btn_classify.image = classify_icon  
-        self.btn_classify.grid(row=1, column=1, padx=10)
+        self.btn_classify.grid(row=1, column=1, padx=20, pady=10)
 
         self.btn_reset = tk.Button(root, text="Reset", command=self.reset, font=("Arial", 15), bg='#2b2e50', fg='white')  
         self.btn_reset.pack(pady=10)
