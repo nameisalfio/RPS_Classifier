@@ -1,3 +1,4 @@
+import os
 import tkinter as tk
 from tkinter import filedialog
 from PIL import Image, ImageTk
@@ -16,7 +17,7 @@ class RPSClassifierApp:
         self.root.configure(bg='#708090')  
 
         self.model = RPSClassifier()
-        self.model.load_state_dict(torch.load("models/rps_experiment-50.pth"))
+        self.model.load_state_dict(torch.load(os.path.join("models", "rps_experiment_1-50.pth")))
         self.model.eval()
 
         self.label_input = tk.Label(root, text="Input Gesture:", font=("Arial", 20), bg='#708090')
@@ -35,7 +36,7 @@ class RPSClassifierApp:
         self.label_load = tk.Label(self.button_frame, text="Load Image", font=("Arial", 15), bg='#708090')
         self.label_load.grid(row=0, column=0, pady=10)
 
-        load_icon_pil = Image.open("icons/load_2.png")
+        load_icon_pil = Image.open(os.path.join("icons", "load_2.png"))
         load_icon_pil = load_icon_pil.resize((50, 50))  
         load_icon = ImageTk.PhotoImage(load_icon_pil)
 
@@ -46,7 +47,7 @@ class RPSClassifierApp:
         self.label_classify = tk.Label(self.button_frame, text="Classify Image", font=("Arial", 15), bg='#708090')
         self.label_classify.grid(row=1, column=0, pady=10)
 
-        classify_icon_pil = Image.open("icons/classify_cnn.png")
+        classify_icon_pil = Image.open(os.path.join("icons", "classify_cnn.png"))
         classify_icon_pil = classify_icon_pil.resize((50, 50))  
         classify_icon = ImageTk.PhotoImage(classify_icon_pil)
 
@@ -62,7 +63,7 @@ class RPSClassifierApp:
     
     def load_image(self):
         try:
-            file_path = filedialog.askopenfilename(initialdir="data/test", title="Select Image", filetypes=[("Image Files", "*.png *.jpg *.jpeg")])
+            file_path = filedialog.askopenfilename(initialdir=os.path.join("data", "test"), title="Select Image", filetypes=[("Image Files", "*.png *.jpg *.jpeg")])
             
             image = Image.open(file_path)
             image_display = image.resize((300, 300))  
