@@ -20,10 +20,12 @@ The performance of the RPS Classifier can be assessed using various metrics and 
 
 ## Visualizations
 
-### RPS Classifier (Experiment 3)
+### RPS Classifier 
 
 - **Accuracy and Loss**: ![Accuracy and Loss](./plots/experiment_3_accuracy_and_Loss.png)
-- **Confusion Matrix**: ![Confusion Matrix](./plots/rps_classifier_confusion_matrix.png)
+
+- **Confusion Matrix**: <br>
+<img src="./plots/rps_classifier_confusion_matrix.png" width="50%" align="center">
 
 ### Model Comparison
 
