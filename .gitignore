@@ -1,0 +1,9 @@
+metrics/
+
+models/
+
+logs/
+
+.DS_Store/	
+
+.ipynb_checkpoints/
