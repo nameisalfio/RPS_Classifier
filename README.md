@@ -18,9 +18,22 @@ The performance of the RPS Classifier can be assessed using various metrics and 
 - **Distribution of Samples**: Histograms illustrating the distribution of samples in both the training and testing datasets.
 - **Model Comparison**: Comparative analysis of the RPS Classifier against other models, such as ResNet and VGG, showcasing performance metrics like accuracy and loss.
 
-## Model Comparison
+## Visualizations
+
+### RPS Classifier (Experiment 3)
+
+- **Accuracy and Loss**: ![Accuracy and Loss](./plots/experiment_3_accuracy_and_Loss.png)
+- **Confusion Matrix**: ![Confusion Matrix](./plots/rps_classifier_confusion_matrix.png)
+
+### Model Comparison
 
 The RPS Classifier's performance is compared with other popular models, including ResNet and VGG, using metrics such as accuracy and loss.
+
+#### Precision-Recall Curves
+
+- **AlexNet**: ![AlexNet Precision-Recall Curve](./plots/alexnet_experiment_prec_rec_curve.png)
+- **GoogLeNet**: ![GoogLeNet Precision-Recall Curve](./plots/googlenet_experiment_prec_rec_curve.png)
+- **SqueezeNet**: ![SqueezeNet Precision-Recall Curve](./plots/squeezenet_experiment_prec_rec_curve.png)
 
 ## User Interface
 
@@ -30,15 +43,6 @@ The RPS Classifier provides a user-friendly interface for easy interaction. The 
 - **Ground Truth Display**: An area to display the ground truth label of the input data.
 - **Result Display**: An area to display the classification result obtained by the RPS Classifier.
 - **Interactive Controls**: Simple controls (e.g., buttons) for intuitive interaction with the interface.
-
-## Visualizations
-
-Several visualizations are available for performance evaluation:
-
-- **Accuracy and Loss**: ![Accuracy and Loss](plots/Accuracy_and_Loss.png)
-- **Distribution of Samples in Testing Data**: ![Distribution of Samples in Testing Data](plots/Distribution_Samples_in_Testing_Data.png)
-- **Comparison of RPS Classifier Performance**: ![Comparison of RPS Classifier Performance](plots/Comparison_RPS_ResNet_Test_Performance.png)
-
 
 ## Cloning the Repository
 
@@ -63,25 +67,37 @@ The directory structure of the project is as follows:
 ```bash
 RPS_Classifier
 ├── data
-│ ├── test
-│ │ ├── paper_frames
-│ │ ├── rock_frames
-│ │ ├── scissors_frames
-│ │ └── video_mp4
-│ └── train
-│ ├── paper_frames
-│ ├── rock_frames
-│ ├── scissors_frames
-│ ├── vieo_MOV
-│ └── video_MP4
+│   ├── test
+│   │   ├── paper_frames
+│   │   ├── rock_frames
+│   │   ├── scissors_frames
+│   │   └── video_mp4
+│   └── train
+│       ├── paper_frames
+│       ├── rock_frames
+│       ├── scissors_frames
+│       ├── video_MOV
+│       └── video_MP4
 ├── icons
 ├── logs
-│ └── rps_experiment
+│   ├── alexnet_experiment
+│   ├── experiment_1
+│   ├── experiment_2
+│   ├── experiment_3
+│   ├── experiment_4
+│   ├── experiment_5
+│   ├── experiment_6
+│   ├── experiment_7
+│   ├── googlenet_experiment
+│   └── squeezenet_experiment
+├── metrics
 ├── models
 └── plots
 ```
 
-## Usage 
+## Usage
+
+For using user interface you can run the following command :
 
 ```bash
 python3 gui.py
