@@ -23,7 +23,7 @@ class RPSClassifierApp:
         self.label_input = tk.Label(root, text="Input Gesture:", font=("Arial", 20), bg='#708090')
         self.label_input.pack(pady=10)
 
-        empty_image = Image.new('RGB', (300, 300), 'white')
+        empty_image = Image.new('RGB', (240, 240), 'white')
         empty_image_tk = ImageTk.PhotoImage(empty_image)
 
         self.input_image = tk.Label(root, image=empty_image_tk, borderwidth=5, relief="solid")  
@@ -66,7 +66,7 @@ class RPSClassifierApp:
             file_path = filedialog.askopenfilename(initialdir=os.path.join("data", "test"), title="Select Image", filetypes=[("Image Files", "*.png *.jpg *.jpeg")])
             
             image = Image.open(file_path)
-            image_display = image.resize((300, 300))  
+            image_display = image.resize((240, 240))  
             image_tk = ImageTk.PhotoImage(image_display)
             self.input_image.config(image=image_tk)
             self.input_image.image = image_tk
@@ -91,7 +91,7 @@ class RPSClassifierApp:
             print(f"Error classifying image: {e}")
 
     def reset(self):
-        empty_image = Image.new('RGB', (300, 300), 'white')
+        empty_image = Image.new('RGB', (240, 240), 'white')
         empty_image_tk = ImageTk.PhotoImage(empty_image)
         self.input_image.config(image=empty_image_tk)
         self.input_image.image = empty_image_tk
