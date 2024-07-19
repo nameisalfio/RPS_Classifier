@@ -168,4 +168,4 @@ RPS_Classifier
 
 ## Contributing
 
-We welcome contributions from the community. Please refer to our Contributing Guidelines for detailed information on how to participate in the project's development.
+We welcome contributions from the community. 
