@@ -90,7 +90,7 @@ The RPS Classifier's performance is compared with other popular models, includin
 
 The RPS Classifier features a sophisticated yet user-friendly interface:
 
-![alt text](<Screenshot 2024-07-20 alle 00.25.05.png>)
+<img src="./plots/gui.png" align="center">
 
 - **Data Input Mechanism**: Streamlined system for loading image data
 
