@@ -1,112 +1,171 @@
-# RPS Classifier
+# RPS Classifier: Image Classification for Rock, Paper, Scissors 
 
-The RPS Classifier is a deep learning model designed for the classification of images into the categories of Rock, Paper, and Scissors (RPS). Leveraging Convolutional Neural Networks (CNNs), this model provides an accurate and efficient solution for RPS image classification tasks.
+## Introduction
 
-## Model Overview
+The RPS Classifier represents a cutting-edge application of deep learning technology in the domain of image classification. Specifically designed to categorize hand gestures into Rock, Paper, or Scissors, this model showcases the power of Convolutional Neural Networks (CNNs) in solving complex visual recognition tasks.
 
-The RPS Classifier is implemented in PyTorch, a popular deep learning framework, and comprises a CNN architecture tailored for image classification tasks. The model architecture is structured as follows:
+## Technical Specifications
 
-- **Convolutional Layers**: The model consists of multiple convolutional layers, each followed by a rectified linear unit (ReLU) activation function and max-pooling operation. These layers extract meaningful features from input images.
-  
-- **Linear Layers**: The final layers of the model are fully connected linear layers responsible for mapping the extracted features to class labels. 
+- Framework: Implemented in PyTorch, leveraging its robust ecosystem for deep learning
+
+- Architecture: Custom CNN optimized for RPS gesture recognition
+Performance: Achieves high accuracy across diverse datasets
+
+- Benchmarking: Rigorously compared against industry-standard models including ResNet, VGG, AlexNet, GoogLeNet, and SqueezeNet
+
+- Visualization: Comprehensive suite of performance metrics and analytical visualizations
+
+- User Interface: Intuitive GUI for seamless interaction and real-time classification
+
+## Model Architecture
+
+The RPS Classifier's neural network architecture is meticulously designed for optimal performance:
+
+- **Convolutional Layers**: Multiple layers for hierarchical feature extraction
+
+- **Activation Functions**: ReLU (Rectified Linear Unit) for introducing non-linearity
+
+- **Pooling Operation**s: Max-pooling for spatial dimensionality reduction
+
+- **Fully Connected Layers**: Final layers for mapping extracted features to class probabilities
 
 ## Performance Evaluation
 
-The performance of the RPS Classifier can be assessed using various metrics and visualizations, including:
+Our rigorous evaluation protocol includes:
 
-- **Accuracy and Loss**: Visualizations depicting the training and testing accuracy and loss trends over epochs.
-- **Distribution of Samples**: Histograms illustrating the distribution of samples in both the training and testing datasets.
-- **Model Comparison**: Comparative analysis of the RPS Classifier against other models, such as ResNet and VGG, showcasing performance metrics like accuracy and loss.
+- **Accuracy and Loss Tracking**: Comprehensive monitoring of model performance during training and testing phases
+
+- **Data Distribution Analysis**: In-depth examination of sample representation in both training and testing datasets
+
+- **Comparative Analysis**: Side-by-side performance benchmarking against top-tier image classification models
 
 ## Visualizations
 
 ### RPS Classifier 
 
 - **Accuracy and Loss**: 
+
 <img src="./plots/experiment_3_accuracy_and_Loss.png" align="center">
+<br><br>
 
-- **Confusion Matrix**: <br>
-<img src="./plots/rps_classifier_confusion_matrix.png" width="50%" align="center">
+- **Confusion Matrix**: 
 
-### Model Comparison
+<div style="display: flex;">
+  <img src="./plots/rps_classifier_confusion_matrix.png"width="50%" align="center">
+  <img src="./plots/rps_classifier_prec_rec_curve.png"width="50%" align="center">
+</div>
 
-The RPS Classifier's performance is compared with other popular models, including ResNet and VGG, using metrics such as accuracy and loss.
+## Model Comparison
 
-#### Precision-Recall Curves
+The RPS Classifier's performance is compared with other popular models, including AlexNet, GoogleNet and Squeeze, using metrics such as accuracy and loss. Confusion Matrix and Precision-Recall Curves follow:
 
-- **AlexNet**: 
-<img src="./plots/alexnet_experiment_prec_rec_curve.png" align="center">
+## Confusion Matrix and Precision-Recall Curves
+<br>
 
-- **GoogLeNet**: 
-<img src="./plots/googlenet_experiment_prec_rec_curve.png" align="center">
+- **AlexNet** benchmarking: 
 
-- **SqueezeNet**:
-<img src="./plots/squeezenet_experiment_prec_rec_curve.png" align="center">
+<div style="display: flex;">
+  <img src="./plots/alexnet_experiment_confusion_matrix.png"width="50%" align="center">
+  <img src="./plots/alexnet_experiment_prec_rec_curve.png"width="50%" align="center">
+</div>
+<br><br>
 
-## User Interface
+- **GoogLeNet** benchmarking: 
 
-The RPS Classifier provides a user-friendly interface for easy interaction. The interface includes features such as:
+<div style="display: flex;">
+  <img src="./plots/googlenet_experiment_confusion_matrix.png"width="50%" align="center">
+  <img src="./plots/googlenet_experiment_prec_rec_curve.png"width="50%" align="center">
+</div>
+<br><br>
 
-- **Input from File**: Users can load input data (e.g., images) from files.
-- **Ground Truth Display**: An area to display the ground truth label of the input data.
-- **Result Display**: An area to display the classification result obtained by the RPS Classifier.
-- **Interactive Controls**: Simple controls (e.g., buttons) for intuitive interaction with the interface.
+- **SqueezeNet** benchmarking:
+<div style="display: flex;">
+  <img src="./plots/squeezenet_experiment_confusion_matrix.png"width="50%" align="center">
+  <img src="./plots/squeezenet_experiment_prec_rec_curve.png"width="50%" align="center">
+</div>
 
-## Cloning the Repository
+<br><br>
 
-You can clone this repository using the following command:
+## Graphical User Interface
+
+The RPS Classifier features a sophisticated yet user-friendly interface:
+
+![alt text](<Screenshot 2024-07-20 alle 00.25.05.png>)
+
+- **Data Input Mechanism**: Streamlined system for loading image data
+
+- **Ground Truth Visualization**: Clear display of input data labels
+
+- **Real-time Classification Output**: Instant presentation of model predictions
+
+- **Intuitive Control System**: Efficiently designed buttons for seamless navigation and operation
+
+## Installation and Usage
+
+**System Requirements** :
+
+- Python 3.7 or higher
+
+- MPS-compatible GPU (recommended for optimal performance)
+
+- ### Repository Cloning
 
 ```bash
 git clone git@github.com:nameisalfio/RPS_Classifier.git
+cd RPS_Classifier
 ```
 
-## Requirements
-
-To run the RPS Classifier, you need to install the following Python libraries:
+- ### Environments Setup
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Directory Structure
-
-The directory structure of the project is as follows:
-
-```bash
-RPS_Classifier
-├── data
-│   ├── test
-│   │   ├── paper_frames
-│   │   ├── rock_frames
-│   │   ├── scissors_frames
-│   │   └── video_mp4
-│   └── train
-│       ├── paper_frames
-│       ├── rock_frames
-│       ├── scissors_frames
-│       ├── video_MOV
-│       └── video_MP4
-├── icons
-├── logs
-│   ├── alexnet_experiment
-│   ├── experiment_1
-│   ├── experiment_2
-│   ├── experiment_3
-│   ├── experiment_4
-│   ├── experiment_5
-│   ├── experiment_6
-│   ├── experiment_7
-│   ├── googlenet_experiment
-│   └── squeezenet_experiment
-├── metrics
-├── models
-└── plots
-```
-
-## Usage
-
-For using user interface you can run the following command :
+## GUI Execution
 
 ```bash
 python3 gui.py
 ```
+
+## Project Structure
+
+```bash
+RPS_Classifier
+├── __pycache__
+├── data
+│   ├── test
+│   │   ├── paper_frames
+│   │   ├── rock_frames
+│   │   ├── scissors_frames
+│   │   └── video_mp4
+│   └── train
+│       ├── paper_frames
+│       ├── rock_frames
+│       ├── scissors4_frames
+│       ├── scissors5_frames
+│       ├── scissors6_frames
+│       ├── scissors_frames
+│       ├── video_MOV
+│       └── video_MP4
+├── icons
+├── logs
+│   ├── alexnet_experiment
+│   ├── experiment_1
+│   ├── experiment_2
+│   ├── experiment_3
+│   ├── experiment_4
+│   ├── experiment_5
+│   ├── experiment_6
+│   ├── experiment_7
+│   ├── googlenet_experiment
+│   └── squeezenet_experiment
+├── metrics
+├── models
+└── plots
+
+32 directories
+```
+
+## Contributing
+
+We welcome contributions from the community. Please refer to our Contributing Guidelines for detailed information on how to participate in the project's development.
