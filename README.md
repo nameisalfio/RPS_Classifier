@@ -52,7 +52,7 @@ Our rigorous evaluation protocol includes:
 
 <div style="display: flex;">
   <img src="./plots/rps_classifier_confusion_matrix.png"width="42%" align="center">
-  <img src="./plots/rps_classifier_prec_rec_curve.png"width="55%" align="center">
+  <img src="./plots/rps_classifier_prec_rec_curve.png"width="56%" align="center">
 </div>
 
 ## Model Comparison
@@ -66,7 +66,7 @@ The RPS Classifier's performance is compared with other popular models, includin
 
 <div style="display: flex;">
   <img src="./plots/alexnet_experiment_confusion_matrix.png"width="42%" align="center">
-  <img src="./plots/alexnet_experiment_prec_rec_curve.png"width="55%" align="center">
+  <img src="./plots/alexnet_experiment_prec_rec_curve.png"width="56%" align="center">
 </div>
 <br><br>
 
@@ -74,14 +74,14 @@ The RPS Classifier's performance is compared with other popular models, includin
 
 <div style="display: flex;">
   <img src="./plots/googlenet_experiment_confusion_matrix.png"width="42%" align="center">
-  <img src="./plots/googlenet_experiment_prec_rec_curve.png"width="55%" align="center">
+  <img src="./plots/googlenet_experiment_prec_rec_curve.png"width="56%" align="center">
 </div>
 <br><br>
 
 - **SqueezeNet** benchmarking:
 <div style="display: flex;">
   <img src="./plots/squeezenet_experiment_confusion_matrix.png"width="42%" align="center">
-  <img src="./plots/squeezenet_experiment_prec_rec_curve.png"width="55%" align="center">
+  <img src="./plots/squeezenet_experiment_prec_rec_curve.png"width="56%" align="center">
 </div>
 
 <br><br>
